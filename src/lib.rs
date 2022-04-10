@@ -2,7 +2,13 @@ use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
 pub fn greet(name: &str){
-    println!("hi there {}", name);
+    alert(name);
 }
 
 //wasm-pack --target web
+
+
+#[wasm_bindgen]
+extern {
+    pub fn alert(s: &str);
+}
