@@ -16,6 +16,10 @@ impl World {
             width:8
         }
     }
+
+    pub fn width(&self) ->usize {
+        self.width
+    }
 }
 
 
