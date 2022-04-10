@@ -1,4 +1,4 @@
-import init, {greet} from 'snake_game';
+import init, { World } from 'snake_game';
 
 // async function start() {
 //   const wasm = init();
@@ -6,5 +6,6 @@ import init, {greet} from 'snake_game';
 // }
 
 init().then((_) => {
-  greet('Filip');
+  const world =  World.new();
+  console.log(world.width);
 });
