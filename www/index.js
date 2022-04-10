@@ -5,7 +5,6 @@ import init, {greet} from 'snake_game';
 //   greet("Filip");
 // }
 
-init().then((wasm) => {
-  wasm.greet('World');
-  console.log('OK');
+init().then((_) => {
+  greet('Filip');
 });
